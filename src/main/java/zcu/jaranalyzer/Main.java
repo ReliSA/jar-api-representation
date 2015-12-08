@@ -8,8 +8,6 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 
-import org.apache.log4j.BasicConfigurator;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -35,7 +33,6 @@ public class Main {
     }
 
     public static void main(String [] args){
-    	BasicConfigurator.configure();
     	if (args.length < 2){
             System.out.println("Too few params. Usage: program <path to jar> <export|import> [output path]");
             return;
